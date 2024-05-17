@@ -1,0 +1,86 @@
+%!
+newpath
+0.5 setgray  % Borde menos negro para la casa
+2 setlinewidth
+200 300 moveto
+350 0 rlineto  % Ajustando la anchura del rectángulo base
+0 200 rlineto
+-350 0 rlineto
+closepath
+stroke
+
+newpath
+0.85 setgray
+212.5 312.5 moveto
+325 0 rlineto  % Ajustando la anchura del área gris para coincidir con la base
+0 175 rlineto
+-325 0 rlineto
+closepath
+fill
+
+% Dibujando un círculo con borde más grueso y completamente negro
+newpath
+0 setgray
+3 setlinewidth  % Borde del círculo más grueso
+275 400 45 0 360 arc
+closepath
+stroke
+newpath
+275 400 45 0 360 arc
+0.6 setgray
+fill
+closepath
+
+/Times-Roman findfont
+15 scalefont
+setfont
+newpath
+340 410 moveto  % Ajustando la posición del texto más cerca del círculo
+(Pablo Ferandez Gallardo) show
+0 setgray
+stroke
+/Times-Roman findfont
+12 scalefont
+setfont
+newpath
+340 395 moveto
+(Estudiante en la ETSIIT) show
+0.5 setgray
+stroke
+
+% Añadiendo texto adicional para dirección
+/Times-Roman findfont
+12 scalefont
+setfont
+newpath
+340 380 moveto
+(C. Periodista Daniel Saucedo Aranda, ) show
+0.5 setgray
+stroke
+newpath
+340 365 moveto
+(s/n, Chana, ) show
+0.5 setgray
+stroke
+newpath
+340 350 moveto
+(18014 Granada) show
+0.5 setgray
+stroke
+
+% Añadiendo información de contacto
+/Times-Roman findfont
+12 scalefont
+setfont
+newpath
+340 335 moveto
+(Tels. 123456789) show
+0.5 setgray
+stroke
+newpath
+340 320 moveto
+(pablofguadix@correo.ugr.es) show
+0.5 setgray
+stroke
+
+showpage
